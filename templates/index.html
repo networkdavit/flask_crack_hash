@@ -6,11 +6,15 @@
 	<title>Crack the Hash</title>
 </head>
 <body>
-	<h2>
-		<form action="{{ url_for('check_hash') }}" method="post">
-		  <input type="text" id="hash_value" name="hash_value">
-          <button type="submit" class="btn btn-default btn-lg">Crack</button>
-      	</form>
-	</h2>
+	<div class="a"></div><div id="circle">
+	<h2>Welcome to Hash Cracker</h2>
+		<p>Please enter the hash below</p>
+		<h2>
+			<form action="{{ url_for('check_hash') }}" method="post">
+			  <input type="text" id="hash_value" name="hash_value">
+	          <button type="submit" class="btn btn-default btn-lg">Crack</button>
+	      	</form>
+		</h2>
+	</div>
 </body>
 </html>
